@@ -2,6 +2,7 @@ export { Container } from "./Container";
 export { Divider } from "./Divider";
 export { Footer } from "./Footer";
 export { Grid } from "./Grid";
+export { Page } from "./Page";
 export { PageHeader } from "./PageHeader";
 export { RelatedPages } from "./RelatedPages";
 export { Section } from "./Section";

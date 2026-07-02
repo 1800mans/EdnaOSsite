@@ -23,7 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <a className="skip-link" href="#main-content">
           Skip to Main Content
         </a>
-        <main id="main-content">{children}</main>
+        {children}
       </body>
     </html>
   );

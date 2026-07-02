@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">EDNA OS logo placeholder</title>
+  <rect width="512" height="512" fill="#F8F7F4"/>
+  <rect x="64" y="64" width="384" height="384" rx="24" fill="none" stroke="#3F6B3C" stroke-width="24"/>
+  <text x="256" y="282" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="700" fill="#1F2328">EDNA</text>
+</svg>
