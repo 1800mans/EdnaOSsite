@@ -11,9 +11,7 @@ export function generateWebPageSchema(input: WebPageSchemaInput): WebPageSchema 
     url: new URL(input.path, siteConfig.url).toString(),
     description: input.description,
     primaryImageOfPage: input.image ? generateImageSchema(input.image) : undefined,
-    breadcrumb: input.breadcrumb
-      ? generateBreadcrumbSchema(input.breadcrumb)
-      : undefined,
+    breadcrumb: input.breadcrumb ? generateBreadcrumbSchema(input.breadcrumb) : undefined,
     isPartOf: {
       "@type": "WebSite",
       name: siteConfig.name,
