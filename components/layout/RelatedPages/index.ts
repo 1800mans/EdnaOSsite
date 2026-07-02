@@ -1,0 +1,1 @@
+export { RelatedPages } from "./RelatedPages";
