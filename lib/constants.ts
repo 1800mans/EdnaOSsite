@@ -1,0 +1,2 @@
+export const SITE_MAX_DEPTH = 3;
+export const TARGET_ACCESSIBILITY_STANDARD = "WCAG 2.2 AA";

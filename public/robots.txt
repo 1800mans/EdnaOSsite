@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ednaos.com/sitemap.xml

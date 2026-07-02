@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "../styles/typography.css";
+@import "../styles/utilities.css";
+
+:root {
+  --font-inter: Inter, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-background: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-text-primary: #1f2328;
+  --color-text-secondary: #586069;
+  --color-primary-green: #3f6b3c;
+  --color-secondary-green: #6d8a5c;
+  --color-accent-earth: #8b6f47;
+  --color-border: #e5e7eb;
+  --color-success: #3e7a43;
+  --color-warning: #b88935;
+  --color-error: #c0392b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-inter), Inter, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary-green);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--color-primary-green);
+  color: var(--color-surface);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
