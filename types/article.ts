@@ -4,4 +4,6 @@ export interface ArticleSummary {
   slug: string;
   publishedAt: string;
   modifiedAt: string;
+  author: string;
+  keywords: string[];
 }

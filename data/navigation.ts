@@ -1,1 +1,7 @@
-export { primaryNavigation } from "@/config/navigation";
+export {
+  breadcrumbHierarchy,
+  footerNavigation,
+  mainNavigation,
+  primaryNavigation,
+  relatedPages,
+} from "@/config/navigation";

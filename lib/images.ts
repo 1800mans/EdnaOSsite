@@ -2,6 +2,18 @@ import type { ImageReference } from "@/types/images";
 
 export const images = {
   logos: {
+    logo: {
+      src: "/assets/logos/edna-logo.svg",
+      alt: "EDNA OS logo",
+      width: 512,
+      height: 512,
+    },
+    mark: {
+      src: "/assets/logos/edna-mark.svg",
+      alt: "EDNA OS mark",
+      width: 512,
+      height: 512,
+    },
     og: {
       src: "/assets/logos/og-image.webp",
       alt: "EDNA OS engineering documentation image",
@@ -9,4 +21,189 @@ export const images = {
       height: 630,
     },
   },
-} satisfies Record<string, Record<string, ImageReference>>;
+  openGraph: {
+    home: {
+      src: "/assets/logos/home-og.webp",
+      alt: "EDNA OS Orchard Operating System engineering image",
+      width: 1200,
+      height: 630,
+    },
+    architecture: {
+      src: "/assets/logos/architecture-og.webp",
+      alt: "EDNA OS architecture engineering image",
+      width: 1200,
+      height: 630,
+    },
+    deployment: {
+      src: "/assets/logos/deployment-og.webp",
+      alt: "EDNA OS commercial orchard deployment image",
+      width: 1200,
+      height: 630,
+    },
+    journal: {
+      src: "/assets/logos/journal-og.webp",
+      alt: "EDNA OS engineering journal image",
+      width: 1200,
+      height: 630,
+    },
+    company: {
+      src: "/assets/logos/company-og.webp",
+      alt: "EDNA OS company engineering image",
+      width: 1200,
+      height: 630,
+    },
+  },
+  pages: {
+    home: {
+      hero: {
+        src: "/assets/images/home/home-hero-01-xl.webp",
+        alt: "Commercial pump station and orchard infrastructure for EDNA OS",
+        width: 2400,
+        height: 1350,
+      },
+      manifesto: {
+        src: "/assets/images/home/home-manifesto-01-lg.webp",
+        alt: "Engineering infrastructure used to document EDNA OS development",
+        width: 1600,
+        height: 1200,
+      },
+      architecturePreview: {
+        src: "/assets/images/home/home-preview-architecture-01-lg.webp",
+        alt: "Architecture preview image showing EDNA OS engineering infrastructure",
+        width: 1600,
+        height: 1200,
+      },
+    },
+    objectives: {
+      hero: {
+        src: "/assets/images/objectives/objectives-hero-01-xl.webp",
+        alt: "Water, fertilizer and orchard output used to explain EDNA OS objectives",
+        width: 2400,
+        height: 1350,
+      },
+    },
+    operatingLoop: {
+      hero: {
+        src: "/assets/images/operating-loop/operating-loop-hero-01-xl.webp",
+        alt: "Emitter and wet soil during irrigation operation",
+        width: 2400,
+        height: 1350,
+      },
+    },
+    measuringOutcomes: {
+      hero: {
+        src: "/assets/images/measuring-outcomes/measuring-outcomes-hero-01-xl.webp",
+        alt: "Lysimeter and root zone measurement equipment in orchard conditions",
+        width: 2400,
+        height: 1350,
+      },
+    },
+    architecture: {
+      hero: {
+        src: "/assets/images/architecture/architecture-hero-01-xl.webp",
+        alt: "PLC cabinet and irrigation control infrastructure for EDNA OS",
+        width: 2400,
+        height: 1350,
+      },
+      plc: {
+        src: "/assets/images/architecture/architecture-plc-01-lg.webp",
+        alt: "PLC control equipment used in EDNA OS architecture",
+        width: 1600,
+        height: 1200,
+      },
+      edge: {
+        src: "/assets/images/architecture/architecture-edge-01-lg.webp",
+        alt: "Edge layer infrastructure for orchard telemetry",
+        width: 1600,
+        height: 1200,
+      },
+      cloud: {
+        src: "/assets/images/architecture/architecture-cloud-01-lg.webp",
+        alt: "Cloud layer reference image for EDNA OS telemetry records",
+        width: 1600,
+        height: 1200,
+      },
+    },
+    deployment: {
+      hero: {
+        src: "/assets/images/deployment/deployment-hero-01-xl.webp",
+        alt: "Commercial durian orchard used for EDNA OS field validation",
+        width: 2400,
+        height: 1350,
+      },
+      power: {
+        src: "/assets/images/deployment/deployment-power-01-lg.webp",
+        alt: "Power infrastructure supporting EDNA OS field deployment",
+        width: 1600,
+        height: 1200,
+      },
+      water: {
+        src: "/assets/images/deployment/deployment-water-01-lg.webp",
+        alt: "Water infrastructure supporting orchard validation",
+        width: 1600,
+        height: 1200,
+      },
+      orchard: {
+        src: "/assets/images/deployment/deployment-orchard-01-lg.webp",
+        alt: "Commercial orchard where EDNA OS is validated",
+        width: 1600,
+        height: 1200,
+      },
+    },
+    documentation: {
+      hero: {
+        src: "/assets/images/documentation/documentation-hero-01-xl.webp",
+        alt: "Engineering notebook, PLC wiring and field measurement records",
+        width: 2400,
+        height: 1350,
+      },
+    },
+    journal: {
+      hero: {
+        src: "/assets/images/journal/journal-hero-01-xl.webp",
+        alt: "Engineering field work and sensor validation in orchard conditions",
+        width: 2400,
+        height: 1350,
+      },
+    },
+    company: {
+      hero: {
+        src: "/assets/images/company/company-hero-01-xl.webp",
+        alt: "Founder working in orchard field conditions",
+        width: 2400,
+        height: 1350,
+      },
+      founder: {
+        src: "/assets/images/company/company-founder-01-lg.webp",
+        alt: "Founder working in the EDNA OS commercial orchard",
+        width: 1600,
+        height: 1200,
+      },
+    },
+  },
+  shared: {
+    cardPlaceholder: {
+      src: "/assets/images/shared/card-placeholder.webp",
+      alt: "Engineering content placeholder",
+      width: 1200,
+      height: 900,
+    },
+    articlePlaceholder: {
+      src: "/assets/images/shared/article-placeholder.webp",
+      alt: "Engineering article placeholder",
+      width: 1200,
+      height: 900,
+    },
+    sectionDivider: {
+      src: "/assets/images/shared/section-divider.webp",
+      alt: "",
+      width: 1600,
+      height: 1200,
+    },
+  },
+} satisfies {
+  logos: Record<string, ImageReference>;
+  openGraph: Record<string, ImageReference>;
+  pages: Record<string, Record<string, ImageReference>>;
+  shared: Record<string, ImageReference>;
+};
