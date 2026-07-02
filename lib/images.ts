@@ -1,6 +1,6 @@
 import type { ImageReference } from "@/types/images";
 
-export const images = {
+export const Images = {
   logos: {
     logo: {
       src: "/assets/logos/edna-logo.svg",
@@ -207,3 +207,5 @@ export const images = {
   pages: Record<string, Record<string, ImageReference>>;
   shared: Record<string, ImageReference>;
 };
+
+export const images = Images;

@@ -1,5 +1,5 @@
 import { metadataDefaults } from "@/lib/metadata/defaults";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import type { PageMetadataDefinition } from "@/types/metadata";
 import type { PageSlug } from "@/types/navigation";
 
@@ -26,7 +26,7 @@ export const pageMetadata = {
       "An engineering project documenting the creation of the Orchard Operating System through deterministic control and operational evidence.",
     path: "/",
     keywords: metadataDefaults.keywords,
-    image: images.openGraph.home.src,
+    image: Images.openGraph.home.src,
     pageType: "Home",
   }),
   objectives: definePageMetadata({
@@ -85,7 +85,7 @@ export const pageMetadata = {
       "Distributed Architecture",
       "Deterministic Control",
     ],
-    image: images.openGraph.architecture.src,
+    image: Images.openGraph.architecture.src,
     pageType: "Architecture",
   }),
   deployment: definePageMetadata({
@@ -100,7 +100,7 @@ export const pageMetadata = {
       "Telemetry",
       "Engineering Validation",
     ],
-    image: images.openGraph.deployment.src,
+    image: Images.openGraph.deployment.src,
     pageType: "Deployment",
   }),
   documentation: definePageMetadata({
@@ -130,7 +130,7 @@ export const pageMetadata = {
       "Design Evolution",
       "Operational Evidence",
     ],
-    image: images.openGraph.journal.src,
+    image: Images.openGraph.journal.src,
     pageType: "Journal Entry",
   }),
   company: definePageMetadata({
@@ -144,7 +144,7 @@ export const pageMetadata = {
       "Commercial Orchard",
       "Engineering Philosophy",
     ],
-    image: images.openGraph.company.src,
+    image: Images.openGraph.company.src,
     pageType: "Company",
   }),
 } satisfies Record<PageSlug, PageMetadataDefinition>;

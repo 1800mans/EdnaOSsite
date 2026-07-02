@@ -1,5 +1,5 @@
 import { relatedPages } from "@/config/navigation";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import { pageMetadata } from "@/lib/metadata";
 import type { ContentPage } from "@/types/page";
 
@@ -13,7 +13,7 @@ export const documentationPage = {
     title: "Engineering knowledge should be preserved.",
     description:
       "Documentation provides permanent engineering references covering architecture, hardware, software, deployment and engineering notes.",
-    image: images.pages.documentation.hero,
+    image: Images.pages.documentation.hero,
   },
   sections: [
     { id: "architecture", title: "Architecture" },

@@ -1,5 +1,5 @@
 import { relatedPages } from "@/config/navigation";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import { pageMetadata } from "@/lib/metadata";
 import type { ContentPage } from "@/types/page";
 
@@ -13,7 +13,7 @@ export const operatingLoopPage = {
     title: "Every irrigation cycle is a controlled experiment.",
     description:
       "Every experiment produces operational evidence. Operational evidence improves future decision logic.",
-    image: images.pages.operatingLoop.hero,
+    image: Images.pages.operatingLoop.hero,
   },
   sections: [
     { id: "observe", title: "Observe" },

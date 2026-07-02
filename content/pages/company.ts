@@ -1,5 +1,5 @@
 import { relatedPages } from "@/config/navigation";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import { pageMetadata } from "@/lib/metadata";
 import type { ContentPage } from "@/types/page";
 
@@ -13,7 +13,7 @@ export const companyPage = {
     title: "Built from operational realities by generational farmers.",
     description:
       "EDNA OS began as a practical engineering response to the operational challenges of managing a commercial orchard.",
-    image: images.pages.company.hero,
+    image: Images.pages.company.hero,
   },
   sections: [
     { id: "mission", title: "Mission" },

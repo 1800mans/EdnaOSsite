@@ -1,5 +1,5 @@
 import { relatedPages } from "@/config/navigation";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import { pageMetadata } from "@/lib/metadata";
 import type { ContentPage } from "@/types/page";
 
@@ -14,7 +14,7 @@ export const deploymentPage = {
     subtitle: "Validated through field operation.",
     description:
       "EDNA OS is engineered and validated through commercial orchard operation.",
-    image: images.pages.deployment.hero,
+    image: Images.pages.deployment.hero,
   },
   sections: [
     { id: "pilot-orchard", title: "Pilot Orchard" },

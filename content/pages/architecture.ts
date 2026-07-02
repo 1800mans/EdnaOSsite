@@ -1,5 +1,5 @@
 import { relatedPages } from "@/config/navigation";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import { pageMetadata } from "@/lib/metadata";
 import type { ContentPage } from "@/types/page";
 
@@ -14,7 +14,7 @@ export const architecturePage = {
     title: "Deterministic engineering for commercial orchards.",
     description:
       "EDNA OS is organized around field infrastructure, PLC control, edge telemetry, cloud records and decision logic.",
-    image: images.pages.architecture.hero,
+    image: Images.pages.architecture.hero,
   },
   sections: [
     { id: "field-infrastructure", title: "Field Infrastructure" },

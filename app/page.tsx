@@ -8,11 +8,12 @@ import { Page } from "@/components/layout/Page";
 import { Section } from "@/components/layout/Section";
 import { Stack } from "@/components/layout/Stack";
 import { Hero } from "@/components/hero";
+import { JsonLd } from "@/components/shared";
 import { Callout } from "@/components/ui/Callout";
 import { ImageBlock } from "@/components/ui/ImageBlock";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { homePage, pages } from "@/content/pages";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import { createNextMetadata } from "@/lib/metadata";
 import {
   generateOrganizationSchema,
@@ -75,7 +76,7 @@ export default function Home() {
               <Callout>{homePage.hero.supportingText}</Callout>
             ) : null}
           </Stack>
-          <ImageBlock image={images.pages.home.manifesto} />
+          <ImageBlock image={Images.pages.home.manifesto} />
         </div>
       </Section>
 
@@ -156,7 +157,7 @@ export default function Home() {
               description={architecture.summary}
               headingId={`${architecture.id}-heading`}
             />
-            <ImageBlock image={images.pages.home.architecturePreview} />
+            <ImageBlock image={Images.pages.home.architecturePreview} />
           </div>
           <Grid>
             {architecturePreviewSlugs.map((slug) => (
@@ -211,17 +212,4 @@ function getHomeSection(
     title: section.title,
     summary: section.summary,
   };
-}
-
-interface JsonLdProps {
-  data: object;
-}
-
-function JsonLd({ data }: JsonLdProps) {
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
-  );
 }

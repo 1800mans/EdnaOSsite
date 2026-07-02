@@ -1,5 +1,5 @@
 import { relatedPages } from "@/config/navigation";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import { pageMetadata } from "@/lib/metadata";
 import type { ContentPage } from "@/types/page";
 
@@ -15,7 +15,7 @@ export const homePage = {
     subtitle: "Defining the Orchard Operating System",
     description:
       "Modern commercial orchards require more than irrigation. They require coordinated control of infrastructure, resources and operational knowledge.",
-    image: images.pages.home.hero,
+    image: Images.pages.home.hero,
     supportingText:
       "Every irrigation cycle is a controlled experiment. Every experiment produces operational evidence. Operational evidence improves future decision logic.",
   },

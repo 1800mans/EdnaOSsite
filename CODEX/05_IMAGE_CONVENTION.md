@@ -60,9 +60,26 @@ These must eventually be replaced by original photography.
 
 ---
 
-Never Use
+## Development Images
 
-AI-generated imagery
+AI-generated images are permitted during development.
+
+They should be created in a realistic documentary style and accurately represent:
+
+- pump stations
+- irrigation manifolds
+- PLC cabinets
+- electrical panels
+- reservoirs
+- pipelines
+- orchard rows
+- lysimeters
+- root systems
+- field engineering
+
+The objective is to communicate engineering intent until original photography becomes available.
+
+Production images should eventually replace AI-generated placeholders while preserving the same filenames.
 
 Generic technology stock photos
 

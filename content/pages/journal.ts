@@ -1,5 +1,5 @@
 import { relatedPages } from "@/config/navigation";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import { pageMetadata } from "@/lib/metadata";
 import type { ContentPage } from "@/types/page";
 
@@ -14,7 +14,7 @@ export const journalPage = {
     subtitle: "It evolves.",
     description:
       "The Engineering Journal documents validation reports, engineering notes, field testing, lessons learned and design revisions.",
-    image: images.pages.journal.hero,
+    image: Images.pages.journal.hero,
   },
   sections: [
     { id: "validation-reports", title: "Validation Reports" },

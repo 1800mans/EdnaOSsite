@@ -410,16 +410,23 @@ If a sentence sounds like marketing, rewrite it.
 
 # Image Policy
 
-Only real commercial agriculture.
+During the development phase, high-quality AI-generated images may be used as engineering placeholders.
 
-No AI-generated imagery.
+Requirements:
 
-No generic stock technology photos.
+- Images must realistically depict commercial orchard infrastructure.
+- Images should follow the Industrial Agriculture visual direction.
+- Avoid futuristic, sci-fi, or marketing aesthetics.
+- Avoid generic SaaS illustrations.
+- Images should appear as realistic documentary photography.
 
-Images should document engineering reality.
+Production Goal:
+
+As the EDNA OS pilot orchard is developed, placeholder images will be systematically replaced with original engineering photographs.
+
+All image filenames and paths must remain unchanged to allow seamless replacement without modifying application code.
 
 All images follow the conventions defined in:
-
 `05_IMAGE_CONVENTION.md`
 
 ---

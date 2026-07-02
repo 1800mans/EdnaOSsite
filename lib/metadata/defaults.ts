@@ -1,5 +1,5 @@
 import { siteConfig } from "@/config/site";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import type { PageMetadataDefinition, RobotsPolicy } from "@/types/metadata";
 
 export const defaultRobotsPolicy: RobotsPolicy = {
@@ -24,7 +24,7 @@ export const metadataDefaults = {
   language: siteConfig.language,
   author: siteConfig.author,
   publisher: siteConfig.publisher,
-  image: images.logos.og.src,
+  image: Images.logos.og.src,
   robots: defaultRobotsPolicy,
   keywords: defaultKeywords,
 } satisfies Pick<

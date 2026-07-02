@@ -1,5 +1,5 @@
 import { relatedPages } from "@/config/navigation";
-import { images } from "@/lib/images";
+import { Images } from "@/lib/images";
 import { pageMetadata } from "@/lib/metadata";
 import type { ContentPage } from "@/types/page";
 
@@ -15,7 +15,7 @@ export const measuringOutcomesPage = {
     subtitle: "EDNA measures what trees actually receive.",
     description:
       "EDNA measures root zone response, runoff and operational evidence instead of simply measuring irrigation inputs.",
-    image: images.pages.measuringOutcomes.hero,
+    image: Images.pages.measuringOutcomes.hero,
   },
   sections: [
     { id: "input-vs-outcome", title: "Input vs Outcome" },
