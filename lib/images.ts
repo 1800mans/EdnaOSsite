@@ -97,6 +97,18 @@ export const Images = {
         width: 2400,
         height: 1350,
       },
+      drainage: {
+        src: "/assets/images/measuring-outcomes/measuring-outcomes-drainage-01-lg.webp",
+        alt: "PVC lysimeter drainage and orchard instrumentation used to collect operational evidence",
+        width: 1600,
+        height: 1200,
+      },
+      rootZone: {
+        src: "/assets/images/measuring-outcomes/measuring-outcomes-root-zone-01-lg.webp",
+        alt: "Root zone sensors and irrigation instrumentation installed in orchard soil",
+        width: 1600,
+        height: 1200,
+      },
     },
     architecture: {
       hero: {
@@ -108,6 +120,18 @@ export const Images = {
       plc: {
         src: "/assets/images/architecture/architecture-plc-01-lg.webp",
         alt: "PLC control equipment used in EDNA OS architecture",
+        width: 1600,
+        height: 1200,
+      },
+      vfd: {
+        src: "/assets/images/architecture/architecture-vfd-01-lg.webp",
+        alt: "VFD and electrical protection equipment used for pump control",
+        width: 1600,
+        height: 1200,
+      },
+      pumpstation: {
+        src: "/assets/images/architecture/architecture-pumpstation-01-lg.webp",
+        alt: "Outdoor irrigation pump station and manifold infrastructure for EDNA OS",
         width: 1600,
         height: 1200,
       },

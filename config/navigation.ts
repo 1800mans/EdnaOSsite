@@ -194,7 +194,7 @@ export const relatedPages: RelatedPagesRegistry = {
   objectives: ["operatingLoop", "measuringOutcomes", "architecture"],
   operatingLoop: ["objectives", "measuringOutcomes", "architecture"],
   measuringOutcomes: ["operatingLoop", "architecture", "deployment"],
-  architecture: ["operatingLoop", "measuringOutcomes", "deployment", "documentation"],
+  architecture: ["operatingLoop", "deployment", "journal"],
   deployment: ["architecture", "documentation", "journal"],
   documentation: ["architecture", "deployment", "journal"],
   journal: ["documentation", "deployment", "about"],
