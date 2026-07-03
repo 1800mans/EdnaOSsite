@@ -195,6 +195,12 @@ export const Images = {
         width: 2400,
         height: 1350,
       },
+      fieldNotes: {
+        src: "/assets/images/journal/journal-field-notes-01-lg.webp",
+        alt: "Engineering field notebook and orchard measurement records",
+        width: 1600,
+        height: 1200,
+      },
     },
     about: {
       hero: {

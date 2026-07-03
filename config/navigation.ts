@@ -203,6 +203,6 @@ export const relatedPages: RelatedPagesRegistry = {
   architecture: ["operatingLoop", "fieldValidation", "journal"],
   fieldValidation: ["architecture", "operatingLoop", "journal", "about"],
   documentation: ["architecture", "fieldValidation", "journal"],
-  journal: ["documentation", "fieldValidation", "about"],
+  journal: ["fieldValidation", "architecture", "measuringOutcomes", "about"],
   about: ["home", "fieldValidation", "journal"],
 };
