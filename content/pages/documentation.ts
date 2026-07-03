@@ -12,14 +12,14 @@ export const documentationPage = {
   hero: {
     title: "Engineering knowledge should be preserved.",
     description:
-      "Documentation provides permanent engineering references covering architecture, hardware, software, deployment and engineering notes.",
+      "Documentation provides permanent engineering references covering architecture, hardware, software, field validation and engineering notes.",
     image: Images.pages.documentation.hero,
   },
   sections: [
     { id: "architecture", title: "Architecture" },
     { id: "hardware", title: "Hardware" },
     { id: "software", title: "Software" },
-    { id: "deployment", title: "Deployment" },
+    { id: "field-validation", title: "Field Validation" },
     { id: "white-papers", title: "White Papers" },
     { id: "engineering-notes", title: "Engineering Notes" },
     { id: "reference-documents", title: "Reference Documents" },

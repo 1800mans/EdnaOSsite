@@ -63,7 +63,7 @@ export const architecturePage = {
   ],
   relatedPages: relatedPages.architecture,
   primaryCTA: {
-    label: "Explore Deployment",
-    href: "/deployment",
+    label: "Explore Field Validation",
+    href: "/field-validation",
   },
 } satisfies ContentPage;

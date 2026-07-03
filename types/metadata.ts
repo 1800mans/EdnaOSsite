@@ -11,7 +11,7 @@ export type PageMetadataType =
   | "Journal Entry"
   | "Research Paper"
   | "Architecture"
-  | "Deployment"
+  | "Field Validation"
   | "Reference"
   | "About";
 

@@ -1,7 +1,7 @@
 export { aboutPage } from "./about";
 export { architecturePage } from "./architecture";
-export { deploymentPage } from "./deployment";
 export { documentationPage } from "./documentation";
+export { fieldValidationPage } from "./field-validation";
 export { homePage } from "./home";
 export { journalPage } from "./journal";
 export { measuringOutcomesPage } from "./measuring-outcomes";
@@ -10,8 +10,8 @@ export { operatingLoopPage } from "./operating-loop";
 
 import { aboutPage } from "./about";
 import { architecturePage } from "./architecture";
-import { deploymentPage } from "./deployment";
 import { documentationPage } from "./documentation";
+import { fieldValidationPage } from "./field-validation";
 import { homePage } from "./home";
 import { journalPage } from "./journal";
 import { measuringOutcomesPage } from "./measuring-outcomes";
@@ -24,7 +24,7 @@ export const pages = {
   operatingLoop: operatingLoopPage,
   measuringOutcomes: measuringOutcomesPage,
   architecture: architecturePage,
-  deployment: deploymentPage,
+  fieldValidation: fieldValidationPage,
   documentation: documentationPage,
   journal: journalPage,
   about: aboutPage,

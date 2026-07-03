@@ -34,9 +34,9 @@ export const Images = {
       width: 1200,
       height: 630,
     },
-    deployment: {
+    fieldValidation: {
       src: "/assets/logos/deployment-og.webp",
-      alt: "EDNA OS commercial orchard deployment image",
+      alt: "EDNA OS commercial orchard field validation image",
       width: 1200,
       height: 630,
     },
@@ -88,6 +88,12 @@ export const Images = {
         alt: "Emitter and wet soil during irrigation operation",
         width: 2400,
         height: 1350,
+      },
+      process: {
+        src: "/assets/images/operating-loop/operating-loop-process-01-lg.webp",
+        alt: "Micro-sprinkler irrigation operating beside the orchard root zone",
+        width: 1600,
+        height: 1200,
       },
     },
     measuringOutcomes: {
@@ -148,28 +154,28 @@ export const Images = {
         height: 1200,
       },
     },
-    deployment: {
+    fieldValidation: {
       hero: {
         src: "/assets/images/deployment/deployment-hero-01-xl.webp",
         alt: "Commercial durian orchard used for EDNA OS field validation",
         width: 2400,
         height: 1350,
       },
-      power: {
-        src: "/assets/images/deployment/deployment-power-01-lg.webp",
-        alt: "Power infrastructure supporting EDNA OS field deployment",
+      pumpstation: {
+        src: "/assets/images/deployment/deployment-pumpstation-01-lg.webp",
+        alt: "Pump station infrastructure used for EDNA OS field validation",
         width: 1600,
         height: 1200,
       },
-      water: {
-        src: "/assets/images/deployment/deployment-water-01-lg.webp",
-        alt: "Water infrastructure supporting orchard validation",
+      reservoir: {
+        src: "/assets/images/deployment/deployment-reservoir-01-lg.webp",
+        alt: "Reservoir infrastructure supporting commercial orchard field validation",
         width: 1600,
         height: 1200,
       },
-      orchard: {
-        src: "/assets/images/deployment/deployment-orchard-01-lg.webp",
-        alt: "Commercial orchard where EDNA OS is validated",
+      irrigation: {
+        src: "/assets/images/deployment/deployment-irrigation-01-lg.webp",
+        alt: "Irrigation infrastructure and telemetry used for field validation",
         width: 1600,
         height: 1200,
       },

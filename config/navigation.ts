@@ -32,10 +32,10 @@ export const mainNavigation: PageNavigationItem[] = [
     description: "How is EDNA built?",
   },
   {
-    slug: "deployment",
-    label: "Deployment",
-    href: "/deployment",
-    description: "Where is EDNA being engineered?",
+    slug: "fieldValidation",
+    label: "Field Validation",
+    href: "/field-validation",
+    description: "Where is EDNA being validated?",
   },
   {
     slug: "journal",
@@ -66,7 +66,7 @@ export const footerNavigation: FooterNavigationGroup[] = [
   {
     title: "Validation",
     items: [
-      { label: "Deployment", href: "/deployment" },
+      { label: "Field Validation", href: "/field-validation" },
       { label: "Documentation", href: "/documentation" },
       { label: "Journal", href: "/journal" },
     ],
@@ -86,7 +86,7 @@ export const breadcrumbHierarchy: BreadcrumbHierarchyItem[] = [
   { label: "Operating Loop", href: "/operating-loop", parentHref: "/" },
   { label: "Measuring Outcomes", href: "/measuring-outcomes", parentHref: "/" },
   { label: "Architecture", href: "/architecture", parentHref: "/" },
-  { label: "Deployment", href: "/deployment", parentHref: "/" },
+  { label: "Field Validation", href: "/field-validation", parentHref: "/" },
   { label: "Documentation", href: "/documentation", parentHref: "/" },
   { label: "Journal", href: "/journal", parentHref: "/" },
   { label: "About", href: "/about", parentHref: "/" },
@@ -190,13 +190,19 @@ export const breadcrumbHierarchy: BreadcrumbHierarchyItem[] = [
 ];
 
 export const relatedPages: RelatedPagesRegistry = {
-  home: ["objectives", "operatingLoop", "architecture", "deployment"],
+  home: ["objectives", "operatingLoop", "architecture", "fieldValidation"],
   objectives: ["operatingLoop", "measuringOutcomes", "architecture"],
-  operatingLoop: ["objectives", "measuringOutcomes", "architecture"],
-  measuringOutcomes: ["operatingLoop", "architecture", "deployment"],
-  architecture: ["operatingLoop", "deployment", "journal"],
-  deployment: ["architecture", "documentation", "journal"],
-  documentation: ["architecture", "deployment", "journal"],
-  journal: ["documentation", "deployment", "about"],
-  about: ["home", "deployment", "journal"],
+  operatingLoop: [
+    "objectives",
+    "measuringOutcomes",
+    "architecture",
+    "fieldValidation",
+    "journal",
+  ],
+  measuringOutcomes: ["operatingLoop", "architecture", "fieldValidation"],
+  architecture: ["operatingLoop", "fieldValidation", "journal"],
+  fieldValidation: ["architecture", "operatingLoop", "journal", "about"],
+  documentation: ["architecture", "fieldValidation", "journal"],
+  journal: ["documentation", "fieldValidation", "about"],
+  about: ["home", "fieldValidation", "journal"],
 };

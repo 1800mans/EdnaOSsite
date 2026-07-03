@@ -88,31 +88,30 @@ export const pageMetadata = {
     image: Images.openGraph.architecture.src,
     pageType: "Architecture",
   }),
-  deployment: definePageMetadata({
-    title: "Deployment | EDNA OS",
+  fieldValidation: definePageMetadata({
+    title: "Field Validation | EDNA OS",
     description:
-      "See how EDNA OS is engineered and validated on a commercial durian orchard.",
-    path: "/deployment",
+      "See how EDNA OS is engineered and validated under real commercial orchard conditions.",
+    path: "/field-validation",
     keywords: [
       "Commercial Durian Orchard",
       "Field Validation",
-      "Deployment",
       "Telemetry",
       "Engineering Validation",
     ],
-    image: Images.openGraph.deployment.src,
-    pageType: "Deployment",
+    image: Images.openGraph.fieldValidation.src,
+    pageType: "Field Validation",
   }),
   documentation: definePageMetadata({
     title: "Engineering Documentation | EDNA OS",
     description:
-      "Browse engineering documentation covering architecture, deployment, hardware and operational principles.",
+      "Browse engineering documentation covering architecture, field validation, hardware and operational principles.",
     path: "/documentation",
     keywords: [
       "Engineering Documentation",
       "Orchard Operating System",
       "Hardware Documentation",
-      "Deployment Guides",
+      "Field Validation",
       "White Papers",
     ],
     image: metadataDefaults.image,

@@ -41,7 +41,11 @@ const objectivePreviewSlugs = [
   "measuringOutcomes",
 ] as const;
 
-const architecturePreviewSlugs = ["architecture", "deployment", "documentation"] as const;
+const architecturePreviewSlugs = [
+  "architecture",
+  "fieldValidation",
+  "documentation",
+] as const;
 
 export default function Home() {
   const manifesto = getHomeSection("engineering-manifesto");
@@ -51,7 +55,7 @@ export default function Home() {
   const operatingLoop = getHomeSection("operating-loop-preview");
   const measuringOutcomes = getHomeSection("measuring-outcomes-preview");
   const architecture = getHomeSection("architecture-preview");
-  const deployment = getHomeSection("deployment-preview");
+  const fieldValidation = getHomeSection("field-validation-preview");
   const journal = getHomeSection("engineering-journal-preview");
   const about = getHomeSection("about-preview");
 
@@ -172,13 +176,13 @@ export default function Home() {
         </Stack>
       </Section>
 
-      <Section id={deployment.id}>
+      <Section id={fieldValidation.id}>
         <Grid>
           <FeatureCard
-            title={deployment.title}
-            description={deployment.summary}
-            href={pages.deployment.path}
-            linkLabel={pages.deployment.primaryCTA.label}
+            title={fieldValidation.title}
+            description={fieldValidation.summary}
+            href={pages.fieldValidation.path}
+            linkLabel={pages.fieldValidation.primaryCTA.label}
           />
           <FeatureCard
             title={journal.title}

@@ -61,8 +61,8 @@ export const homePage = {
         "EDNA OS is organized around field infrastructure, PLC control, edge telemetry, cloud records and decision logic.",
     },
     {
-      id: "deployment-preview",
-      title: "Deployment Preview",
+      id: "field-validation-preview",
+      title: "Field Validation Preview",
       summary:
         "EDNA OS is built on a commercial orchard and validated through field operation.",
     },

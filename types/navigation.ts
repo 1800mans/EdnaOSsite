@@ -4,7 +4,7 @@ export type PageSlug =
   | "operatingLoop"
   | "measuringOutcomes"
   | "architecture"
-  | "deployment"
+  | "fieldValidation"
   | "documentation"
   | "journal"
   | "about";
@@ -36,7 +36,7 @@ export interface RelatedPagesRegistry {
   operatingLoop: PageSlug[];
   measuringOutcomes: PageSlug[];
   architecture: PageSlug[];
-  deployment: PageSlug[];
+  fieldValidation: PageSlug[];
   documentation: PageSlug[];
   journal: PageSlug[];
   about: PageSlug[];
