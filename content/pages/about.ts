@@ -48,7 +48,7 @@ export const aboutPage = {
       id: "about-the-founder",
       title: "About the Founder",
       summary:
-        "The founder studied Radiophysics at Belarus State University before leaving university to pursue independent engineering and entrepreneurial work. He is an alumnus of the Belarus State University Lyceum. His background combines commercial agriculture, engineering, software development and industrial automation. EDNA OS is the result of practical field experience rather than academic research alone.",
+        "The founder studied Radiophysics at Belarus State University after graduating from the Belarus State University Lyceum. His studies were interrupted after leaving the country, leading him toward entrepreneurship, engineering and software development through practical experience rather than a traditional academic path.\n\nYears later, while developing and operating a commercial durian orchard, he encountered the limitations of existing irrigation and orchard management systems. Rather than adapting the orchard to available tools, he began engineering a system around its operational realities.\n\nThe project initially started as a simple mini PC with GPIO control and ESP32-based field devices. As engineering requirements evolved and new milestones were reached, the architecture gradually developed into a far more robust distributed system built around PLC control, edge computing, telemetry and operational evidence.\n\nWhat began as a practical solution for a single commercial orchard has evolved into a broader engineering effort to define a new category: the Orchard Operating System.",
     },
     {
       id: "development-locations",
