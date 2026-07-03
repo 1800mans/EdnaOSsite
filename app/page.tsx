@@ -53,7 +53,7 @@ export default function Home() {
   const architecture = getHomeSection("architecture-preview");
   const deployment = getHomeSection("deployment-preview");
   const journal = getHomeSection("engineering-journal-preview");
-  const company = getHomeSection("company-preview");
+  const about = getHomeSection("about-preview");
 
   return (
     <Page page={homePage} relatedPages>
@@ -187,10 +187,10 @@ export default function Home() {
             linkLabel={pages.journal.primaryCTA.label}
           />
           <FeatureCard
-            title={company.title}
-            description={company.summary}
-            href={pages.company.path}
-            linkLabel={pages.company.primaryCTA.label}
+            title={about.title}
+            description={about.summary}
+            href={pages.about.path}
+            linkLabel={pages.about.primaryCTA.label}
           />
         </Grid>
       </Section>

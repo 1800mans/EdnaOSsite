@@ -46,9 +46,9 @@ export const Images = {
       width: 1200,
       height: 630,
     },
-    company: {
-      src: "/assets/logos/company-og.webp",
-      alt: "EDNA OS company engineering image",
+    about: {
+      src: "/assets/logos/about-og.webp",
+      alt: "EDNA OS about page engineering image",
       width: 1200,
       height: 630,
     },
@@ -166,15 +166,15 @@ export const Images = {
         height: 1350,
       },
     },
-    company: {
+    about: {
       hero: {
-        src: "/assets/images/company/company-hero-01-xl.webp",
+        src: "/assets/images/about/about-hero-01-xl.webp",
         alt: "Founder working in orchard field conditions",
         width: 2400,
         height: 1350,
       },
       founder: {
-        src: "/assets/images/company/company-founder-01-lg.webp",
+        src: "/assets/images/about/about-founder-01-lg.webp",
         alt: "Founder working in the EDNA OS commercial orchard",
         width: 1600,
         height: 1200,

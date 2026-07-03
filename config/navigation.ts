@@ -38,21 +38,15 @@ export const mainNavigation: PageNavigationItem[] = [
     description: "Where is EDNA being engineered?",
   },
   {
-    slug: "documentation",
-    label: "Documentation",
-    href: "/documentation",
-    description: "How is EDNA documented?",
-  },
-  {
     slug: "journal",
-    label: "Journal",
+    label: "Engineering Journal",
     href: "/journal",
     description: "What is currently being developed?",
   },
   {
-    slug: "company",
-    label: "Company",
-    href: "/company",
+    slug: "about",
+    label: "About",
+    href: "/about",
     description: "Who is building EDNA?",
   },
 ];
@@ -81,7 +75,7 @@ export const footerNavigation: FooterNavigationGroup[] = [
     title: "Project",
     items: [
       { label: "Home", href: "/" },
-      { label: "Company", href: "/company" },
+      { label: "About", href: "/about" },
     ],
   },
 ];
@@ -95,7 +89,7 @@ export const breadcrumbHierarchy: BreadcrumbHierarchyItem[] = [
   { label: "Deployment", href: "/deployment", parentHref: "/" },
   { label: "Documentation", href: "/documentation", parentHref: "/" },
   { label: "Journal", href: "/journal", parentHref: "/" },
-  { label: "Company", href: "/company", parentHref: "/" },
+  { label: "About", href: "/about", parentHref: "/" },
   {
     label: "Reduce Water Consumption",
     href: "/objectives/reduce-water-consumption",
@@ -203,6 +197,6 @@ export const relatedPages: RelatedPagesRegistry = {
   architecture: ["operatingLoop", "measuringOutcomes", "deployment", "documentation"],
   deployment: ["architecture", "documentation", "journal"],
   documentation: ["architecture", "deployment", "journal"],
-  journal: ["documentation", "deployment", "company"],
-  company: ["home", "deployment", "journal"],
+  journal: ["documentation", "deployment", "about"],
+  about: ["home", "deployment", "journal"],
 };

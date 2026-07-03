@@ -133,18 +133,18 @@ export const pageMetadata = {
     image: Images.openGraph.journal.src,
     pageType: "Journal Entry",
   }),
-  company: definePageMetadata({
-    title: "Company | EDNA OS",
+  about: definePageMetadata({
+    title: "About | EDNA OS",
     description:
-      "Learn why EDNA OS exists and how operational experience inspired the Orchard Operating System.",
-    path: "/company",
+      "Learn why EDNA OS exists, who is building it and how field validation guides the project.",
+    path: "/about",
     keywords: [
       "EDNA OS",
       "Orchard Operating System",
       "Commercial Orchard",
       "Engineering Philosophy",
     ],
-    image: Images.openGraph.company.src,
-    pageType: "Company",
+    image: Images.openGraph.about.src,
+    pageType: "About",
   }),
 } satisfies Record<PageSlug, PageMetadataDefinition>;

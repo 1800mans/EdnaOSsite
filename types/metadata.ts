@@ -13,7 +13,7 @@ export type PageMetadataType =
   | "Architecture"
   | "Deployment"
   | "Reference"
-  | "Company";
+  | "About";
 
 export interface PageMetadataDefinition {
   title: string;

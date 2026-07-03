@@ -1,5 +1,5 @@
+export { aboutPage } from "./about";
 export { architecturePage } from "./architecture";
-export { companyPage } from "./company";
 export { deploymentPage } from "./deployment";
 export { documentationPage } from "./documentation";
 export { homePage } from "./home";
@@ -8,8 +8,8 @@ export { measuringOutcomesPage } from "./measuring-outcomes";
 export { objectivesPage } from "./objectives";
 export { operatingLoopPage } from "./operating-loop";
 
+import { aboutPage } from "./about";
 import { architecturePage } from "./architecture";
-import { companyPage } from "./company";
 import { deploymentPage } from "./deployment";
 import { documentationPage } from "./documentation";
 import { homePage } from "./home";
@@ -27,7 +27,7 @@ export const pages = {
   deployment: deploymentPage,
   documentation: documentationPage,
   journal: journalPage,
-  company: companyPage,
+  about: aboutPage,
 } as const;
 
 export const allPages = Object.values(pages);

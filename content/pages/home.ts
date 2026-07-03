@@ -73,8 +73,8 @@ export const homePage = {
         "Engineering never finishes. It evolves through validation reports, field testing, lessons learned and design revisions.",
     },
     {
-      id: "company-preview",
-      title: "Company Preview",
+      id: "about-preview",
+      title: "About Preview",
       summary:
         "EDNA OS began as a practical engineering response to the operational challenges of managing a commercial orchard.",
     },

@@ -7,7 +7,7 @@ export type PageSlug =
   | "deployment"
   | "documentation"
   | "journal"
-  | "company";
+  | "about";
 
 export interface NavigationItem {
   label: string;
@@ -39,5 +39,5 @@ export interface RelatedPagesRegistry {
   deployment: PageSlug[];
   documentation: PageSlug[];
   journal: PageSlug[];
-  company: PageSlug[];
+  about: PageSlug[];
 }
