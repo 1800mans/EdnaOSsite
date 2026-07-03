@@ -7,9 +7,15 @@ interface ArchitectureCardProps {
   layer: string;
   description: string;
   href?: string;
+  linkLabel?: string;
 }
 
-export function ArchitectureCard({ layer, description, href }: ArchitectureCardProps) {
+export function ArchitectureCard({
+  layer,
+  description,
+  href,
+  linkLabel = "Explore layer",
+}: ArchitectureCardProps) {
   return (
     <CardShell>
       <Heading level={3}>{layer}</Heading>
@@ -18,7 +24,7 @@ export function ArchitectureCard({ layer, description, href }: ArchitectureCardP
       </Text>
       {href ? (
         <div className="mt-6">
-          <Link href={href}>Explore layer</Link>
+          <Link href={href}>{linkLabel}</Link>
         </div>
       ) : null}
     </CardShell>

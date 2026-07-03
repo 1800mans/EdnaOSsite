@@ -7,9 +7,15 @@ interface ObjectiveCardProps {
   title: string;
   description: string;
   href?: string;
+  linkLabel?: string;
 }
 
-export function ObjectiveCard({ title, description, href }: ObjectiveCardProps) {
+export function ObjectiveCard({
+  title,
+  description,
+  href,
+  linkLabel = "Explore objective",
+}: ObjectiveCardProps) {
   return (
     <CardShell>
       <Heading level={3}>{title}</Heading>
@@ -18,7 +24,7 @@ export function ObjectiveCard({ title, description, href }: ObjectiveCardProps) 
       </Text>
       {href ? (
         <div className="mt-6">
-          <Link href={href}>Explore objective</Link>
+          <Link href={href}>{linkLabel}</Link>
         </div>
       ) : null}
     </CardShell>

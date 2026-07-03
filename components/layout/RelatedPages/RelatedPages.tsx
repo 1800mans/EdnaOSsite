@@ -26,10 +26,14 @@ export function RelatedPages({ page, title = "Related Topics" }: RelatedPagesPro
             title={relatedPage.metadata.title}
             description={relatedPage.purpose}
             href={relatedPage.path}
-            linkLabel="Open topic"
+            linkLabel={getRelatedPageLinkLabel(relatedPage.metadata.title)}
           />
         ))}
       </Grid>
     </section>
   );
+}
+
+function getRelatedPageLinkLabel(title: string): string {
+  return `Open ${title.replace(" | EDNA OS", "")}`;
 }

@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import type { ReactNode } from "react";
+import type { AriaAttributes, ReactNode } from "react";
 
 import { cx, isExternalUrl } from "@/lib/helpers";
 
@@ -8,6 +8,7 @@ type LinkVariant = "text" | "primary" | "secondary" | "navigation" | "subtle";
 interface LinkProps {
   href: string;
   children: ReactNode;
+  ariaCurrent?: AriaAttributes["aria-current"];
   className?: string;
   external?: boolean;
   variant?: LinkVariant;
@@ -28,6 +29,7 @@ const variantClasses: Record<LinkVariant, string> = {
 export function Link({
   href,
   children,
+  ariaCurrent,
   className,
   external,
   variant = "text",
@@ -37,7 +39,13 @@ export function Link({
 
   if (isExternal) {
     return (
-      <a href={href} className={classes} target="_blank" rel="noreferrer">
+      <a
+        href={href}
+        aria-current={ariaCurrent}
+        className={classes}
+        target="_blank"
+        rel="noreferrer"
+      >
         {children}
         <span className="sr-only"> opens in a new tab</span>
       </a>
@@ -45,7 +53,7 @@ export function Link({
   }
 
   return (
-    <NextLink href={href} className={classes}>
+    <NextLink href={href} aria-current={ariaCurrent} className={classes}>
       {children}
     </NextLink>
   );

@@ -52,7 +52,7 @@ export function createNextMetadata(metadata: PageMetadataDefinition): Metadata {
           url: metadata.image,
           width: 1200,
           height: 630,
-          alt: `${metadataDefaults.siteName} engineering documentation image`,
+          alt: metadata.title,
         },
       ],
       locale: metadata.language.replace("-", "_"),

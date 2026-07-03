@@ -67,7 +67,6 @@ export const footerNavigation: FooterNavigationGroup[] = [
     title: "Validation",
     items: [
       { label: "Field Validation", href: "/field-validation" },
-      { label: "Documentation", href: "/documentation" },
       { label: "Journal", href: "/journal" },
     ],
   },

@@ -13,9 +13,12 @@ import { Callout } from "@/components/ui/Callout";
 import { ImageBlock } from "@/components/ui/ImageBlock";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { homePage, pages } from "@/content/pages";
+import { createBreadcrumbs } from "@/lib/breadcrumbs";
 import { Images } from "@/lib/images";
 import { createNextMetadata } from "@/lib/metadata";
 import {
+  generateBreadcrumbSchema,
+  generateImageSchema,
   generateOrganizationSchema,
   generateWebPageSchema,
   generateWebsiteSchema,
@@ -23,6 +26,8 @@ import {
 import type { PageSection } from "@/types/page";
 
 export const metadata: Metadata = createNextMetadata(homePage.metadata);
+
+const breadcrumbs = createBreadcrumbs(homePage.path);
 
 const schemaGraph = [
   generateOrganizationSchema(),
@@ -32,7 +37,10 @@ const schemaGraph = [
     path: homePage.path,
     description: homePage.metadata.description,
     image: homePage.hero.image,
+    breadcrumb: breadcrumbs,
   }),
+  generateBreadcrumbSchema(breadcrumbs),
+  generateImageSchema(homePage.hero.image),
 ];
 
 const objectivePreviewSlugs = [
@@ -41,11 +49,7 @@ const objectivePreviewSlugs = [
   "measuringOutcomes",
 ] as const;
 
-const architecturePreviewSlugs = [
-  "architecture",
-  "fieldValidation",
-  "documentation",
-] as const;
+const architecturePreviewSlugs = ["architecture", "fieldValidation", "journal"] as const;
 
 export default function Home() {
   const manifesto = getHomeSection("engineering-manifesto");
@@ -102,12 +106,13 @@ export default function Home() {
               title={objectives.title}
               description={objectives.summary}
               href={pages.objectives.path}
+              linkLabel={getTopicLinkLabel(pages.objectives.metadata.title)}
             />
             <FeatureCard
               title={operatingLoop.title}
               description={operatingLoop.summary}
               href={pages.operatingLoop.path}
-              linkLabel={pages.operatingLoop.primaryCTA.label}
+              linkLabel={getTopicLinkLabel(pages.operatingLoop.metadata.title)}
             />
           </Grid>
         </Stack>
@@ -127,7 +132,7 @@ export default function Home() {
                 title={pages[slug].hero.title}
                 description={pages[slug].purpose}
                 href={pages[slug].path}
-                linkLabel={pages[slug].primaryCTA.label}
+                linkLabel={getTopicLinkLabel(pages[slug].metadata.title)}
               />
             ))}
           </Grid>
@@ -146,7 +151,7 @@ export default function Home() {
               title={operatingLoop.title}
               description={operatingLoop.summary}
               href={pages.operatingLoop.path}
-              linkLabel={pages.operatingLoop.primaryCTA.label}
+              linkLabel={getTopicLinkLabel(pages.operatingLoop.metadata.title)}
             />
           </Stack>
           <ImageBlock image={pages.measuringOutcomes.hero.image} />
@@ -170,6 +175,7 @@ export default function Home() {
                 layer={pages[slug].hero.title}
                 description={pages[slug].purpose}
                 href={pages[slug].path}
+                linkLabel={getTopicLinkLabel(pages[slug].metadata.title)}
               />
             ))}
           </Grid>
@@ -182,24 +188,28 @@ export default function Home() {
             title={fieldValidation.title}
             description={fieldValidation.summary}
             href={pages.fieldValidation.path}
-            linkLabel={pages.fieldValidation.primaryCTA.label}
+            linkLabel={getTopicLinkLabel(pages.fieldValidation.metadata.title)}
           />
           <FeatureCard
             title={journal.title}
             description={journal.summary}
             href={pages.journal.path}
-            linkLabel={pages.journal.primaryCTA.label}
+            linkLabel={getTopicLinkLabel(pages.journal.metadata.title)}
           />
           <FeatureCard
             title={about.title}
             description={about.summary}
             href={pages.about.path}
-            linkLabel={pages.about.primaryCTA.label}
+            linkLabel={getTopicLinkLabel(pages.about.metadata.title)}
           />
         </Grid>
       </Section>
     </Page>
   );
+}
+
+function getTopicLinkLabel(title: string): string {
+  return `Explore ${title.replace(" | EDNA OS", "")}`;
 }
 
 function getHomeSection(

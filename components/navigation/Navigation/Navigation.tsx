@@ -29,10 +29,11 @@ export function Navigation({ currentPath }: NavigationProps) {
               <li key={item.href}>
                 <Link
                   href={item.href}
+                  ariaCurrent={isCurrent ? "page" : undefined}
                   variant="navigation"
                   className={cx(isCurrent && "text-[var(--color-primary-green)]")}
                 >
-                  <span aria-current={isCurrent ? "page" : undefined}>{item.label}</span>
+                  {item.label}
                 </Link>
               </li>
             );
@@ -43,21 +44,22 @@ export function Navigation({ currentPath }: NavigationProps) {
         aria-label="Primary mobile navigation"
         className="border-t border-[var(--color-border)] bg-white lg:hidden"
       >
-        <ul className="mx-auto grid max-w-[760px] grid-cols-5">
-          {mainNavigation.slice(0, 5).map((item) => {
+        <ul className="mx-auto flex max-w-[760px] flex-wrap items-center justify-center gap-x-4 gap-y-1 px-4 py-2">
+          {mainNavigation.map((item) => {
             const isCurrent = currentPath === item.href;
 
             return (
               <li key={item.href}>
                 <Link
                   href={item.href}
+                  ariaCurrent={isCurrent ? "page" : undefined}
                   variant="navigation"
                   className={cx(
-                    "w-full justify-center px-2 text-center text-xs",
+                    "min-h-9 whitespace-nowrap text-center text-xs",
                     isCurrent && "text-[var(--color-primary-green)]",
                   )}
                 >
-                  <span aria-current={isCurrent ? "page" : undefined}>{item.label}</span>
+                  {item.label}
                 </Link>
               </li>
             );
