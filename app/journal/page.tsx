@@ -9,7 +9,10 @@ import { Hero } from "@/components/hero";
 import { JsonLd } from "@/components/shared";
 import { Callout } from "@/components/ui/Callout";
 import { ImageBlock } from "@/components/ui/ImageBlock";
+import { Link } from "@/components/ui/Link";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { Tag } from "@/components/ui/Tag";
+import { Text } from "@/components/ui/Text";
 import {
   journalEntryTypes,
   journalLogFormat,
@@ -18,6 +21,7 @@ import {
 } from "@/content/pages/journal";
 import { createBreadcrumbs } from "@/lib/breadcrumbs";
 import { Images } from "@/lib/images";
+import { getPublishedJournalRecords } from "@/lib/journal/getJournalRecords";
 import { createNextMetadata } from "@/lib/metadata";
 import {
   generateArticleSchema,
@@ -49,6 +53,7 @@ const schemaGraph = [
 ];
 
 export default function Journal() {
+  const publishedRecords = getPublishedJournalRecords();
   const purpose = getJournalSection("purpose");
   const whatGetsRecorded = getJournalSection("what-gets-recorded");
   const journalEntryTypesSection = getJournalSection("journal-entry-types");
@@ -59,6 +64,39 @@ export default function Journal() {
     <Page page={journalPage} relatedPages>
       <JsonLd data={schemaGraph} />
       <Hero {...journalPage.hero} primaryCTA={journalPage.primaryCTA} />
+
+      <Section id="published-records">
+        <Stack gap="xlarge">
+          <SectionHeader
+            title="Published Engineering Records"
+            description="Published records are listed newest first and preserved as structured engineering content."
+            headingId="published-records-heading"
+          />
+          <Stack gap="large">
+            {publishedRecords.map((record) => (
+              <article
+                key={record.slug}
+                className="rounded-[18px] border border-[var(--color-border)] bg-white p-6"
+              >
+                <Text size="small" muted>
+                  {formatRecordDate(record.datePublished)} · {record.recordType}
+                </Text>
+                <h3 className="mt-3 text-2xl font-bold leading-snug text-[var(--color-text-primary)]">
+                  <Link href={`/journal/${record.slug}`}>{record.title}</Link>
+                </h3>
+                <Text muted className="mt-3">
+                  {record.summary}
+                </Text>
+                <div className="mt-5 flex flex-wrap gap-2" aria-label="Record tags">
+                  {record.tags.map((tag) => (
+                    <Tag key={tag} label={tag} />
+                  ))}
+                </div>
+              </article>
+            ))}
+          </Stack>
+        </Stack>
+      </Section>
 
       <Section id={purpose.id} background="surface">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1fr)] lg:items-center">
@@ -140,6 +178,15 @@ export default function Journal() {
       </Section>
     </Page>
   );
+}
+
+function formatRecordDate(value: string): string {
+  return new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${value}T00:00:00.000Z`));
 }
 
 function getJournalSection(
