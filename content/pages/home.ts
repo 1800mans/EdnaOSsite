@@ -17,20 +17,20 @@ export const homePage = {
       "Modern commercial orchards require more than irrigation. They require coordinated control of infrastructure, resources and operational knowledge.",
     image: Images.pages.home.hero,
     supportingText:
-      "Every irrigation cycle is a controlled experiment. Every experiment produces operational evidence. Operational evidence improves future decision logic.",
+      "Field operation produces evidence. Evidence improves future decision logic.",
   },
   sections: [
     {
       id: "engineering-manifesto",
       title: "Engineering Manifesto",
       summary:
-        "Engineering precedes software. Architecture precedes implementation. Measurement precedes optimization. Operational evidence precedes conclusions.",
+        "Engineering precedes software. Architecture precedes implementation. Measurement precedes optimization. The first resource EDNA OS optimizes is information. Water and nutrients follow.",
     },
     {
       id: "why-commercial-orchards-need-more",
       title: "Why Commercial Orchards Need More",
       summary:
-        "Modern commercial orchards require coordinated control of infrastructure, resources and operational knowledge.",
+        "Modern commercial orchards require coordinated control of infrastructure, resources and operational knowledge before resource decisions can be improved with confidence.",
     },
     {
       id: "what-is-orchard-operating-system",
@@ -41,13 +41,14 @@ export const homePage = {
     {
       id: "engineering-objectives",
       title: "Engineering Objectives Preview",
-      summary: "Technology is not the objective. Better orchard performance is.",
+      summary:
+        "Technology is not the objective. Better orchard performance starts with better operational understanding.",
     },
     {
       id: "operating-loop-preview",
       title: "Operating Loop Preview",
       summary:
-        "Every irrigation cycle is a controlled experiment. Every experiment produces operational evidence.",
+        "Each irrigation cycle creates field evidence that improves the next operating decision.",
     },
     {
       id: "measuring-outcomes-preview",

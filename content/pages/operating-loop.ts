@@ -12,7 +12,7 @@ export const operatingLoopPage = {
   hero: {
     title: "Every irrigation cycle is a controlled experiment.",
     subtitle:
-      "EDNA OS continuously observes, operates, measures and improves irrigation decisions through operational evidence collected during real orchard operation.",
+      "EDNA OS continuously observes, operates, measures and improves irrigation decisions through evidence collected during real orchard operation.",
     description:
       "The Operating Loop explains how orchard operations become measurable engineering experiments rather than isolated irrigation events.",
     image: Images.pages.operatingLoop.hero,
@@ -24,7 +24,7 @@ export const operatingLoopPage = {
       id: "observe",
       title: "Observe",
       summary:
-        "Every irrigation cycle begins with observation. Weather, soil moisture, tank levels, previous irrigation, tree condition and existing operational evidence define the initial operating conditions.",
+        "Every irrigation cycle begins with observation. Weather, soil moisture, tank levels, previous irrigation, tree condition and existing field evidence define the initial operating conditions.",
     },
     {
       id: "operate",
@@ -42,7 +42,7 @@ export const operatingLoopPage = {
       id: "record",
       title: "Record",
       summary:
-        "Operational evidence is permanently recorded through telemetry, historical records, engineering observations and multi-season comparison.",
+        "Operational evidence is permanently recorded through telemetry, historical records, engineering observations and multi-season comparison, turning routine operation into a durable knowledge base.",
     },
     {
       id: "learn",
@@ -54,13 +54,13 @@ export const operatingLoopPage = {
       id: "improve",
       title: "Improve",
       summary:
-        "Every completed irrigation cycle informs the next one. The loop connects back to the engineering objectives: less water, less fertilizer, reduced erosion, healthier root systems, better fruit quality and more consistent production.",
+        "Every completed irrigation cycle informs the next one. The loop connects back to the engineering objectives: better use of water and fertilizer, reduced erosion, healthier root systems, better fruit quality and more consistent production.",
     },
     {
       id: "operating-philosophy",
       title: "Operating Philosophy",
       summary:
-        "Every irrigation cycle is a controlled experiment. Every experiment produces operational evidence. Operational evidence improves future decision logic.",
+        "Understand before acting. Measure before optimizing. Validate before scaling. EDNA OS improves irrigation and fertigation by improving the quality of operational knowledge first.",
     },
   ],
   relatedPages: relatedPages.operatingLoop,

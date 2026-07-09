@@ -52,7 +52,7 @@ export const architecturePage = {
       id: "decision-layer",
       title: "Decision Layer",
       summary:
-        "Engineering decisions improve when operational evidence is compared with root-zone response and outcome measurement. This layer connects Measuring Outcomes to Architecture through continuous improvement.",
+        "Engineering decisions improve when operational evidence is compared with root-zone response and outcome measurement. This layer turns recorded information into revised irrigation and fertigation logic, connecting Measuring Outcomes to Architecture through continuous improvement.",
     },
     {
       id: "fail-safe-engineering",

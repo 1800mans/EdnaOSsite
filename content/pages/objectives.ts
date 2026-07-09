@@ -6,14 +6,15 @@ import type { ContentPage } from "@/types/page";
 export const objectivesPage = {
   slug: "objectives",
   path: "/objectives",
-  purpose: "Explain why EDNA exists. Technology exists to solve operational problems.",
+  purpose:
+    "Define the operating problems EDNA OS is built to measure, understand and improve.",
   primaryQuestion: "Why build an Orchard Operating System?",
   metadata: pageMetadata.objectives,
   hero: {
     title: "Technology is not the objective.",
     subtitle: "Better orchard performance is.",
     description:
-      "Technology exists to solve operational problems in commercial orchards.",
+      "Technology exists to replace uncertainty with measured operating evidence in commercial orchards.",
     image: Images.pages.objectives.hero,
     supportingText: "Technology exists to improve orchard performance.",
   },
@@ -22,25 +23,25 @@ export const objectivesPage = {
       id: "technology-is-not-the-objective",
       title: "Technology Is Not The Objective",
       summary:
-        "Technology exists to solve operational problems in commercial orchards. EDNA OS is evaluated by orchard performance, not by the presence of software.",
+        "Technology exists to solve operational problems in commercial orchards. EDNA OS is evaluated by orchard performance and decision quality, not by the presence of software.",
     },
     {
       id: "engineering-objectives-overview",
       title: "Engineering Objectives Overview",
       summary:
-        "The objectives define the operational outcomes EDNA OS is designed to measure, influence and validate over time.",
+        "The objectives define the operational outcomes EDNA OS is designed to measure, influence and validate over time. Improving information quality is itself an operating objective because water, fertilizer and timing decisions depend on what the system can prove.",
     },
     {
       id: "reduce-water-consumption",
       title: "Reduce Water Consumption",
       summary:
-        "Water use is evaluated through controlled irrigation decisions and measured field outcomes.",
+        "Water use is evaluated through controlled irrigation decisions, measured field outcomes and evidence from prior cycles.",
     },
     {
       id: "reduce-fertilizer-losses",
       title: "Reduce Fertilizer Losses",
       summary:
-        "Fertilizer decisions are evaluated against runoff, drainage and root zone response.",
+        "Fertilizer decisions are evaluated against runoff, drainage, root-zone response and what the tree environment actually retained.",
     },
     {
       id: "reduce-soil-erosion",
@@ -70,7 +71,7 @@ export const objectivesPage = {
       id: "lower-operating-costs",
       title: "Lower Operating Costs",
       summary:
-        "Operating cost decisions are evaluated through infrastructure, resource use and field validation.",
+        "Operating cost decisions are evaluated through infrastructure behavior, resource use, information quality and field validation.",
     },
   ],
   relatedPages: relatedPages.objectives,

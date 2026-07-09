@@ -24,13 +24,13 @@ export const measuringOutcomesPage = {
       id: "input-vs-outcome",
       title: "Input vs Outcome",
       summary:
-        "Conventional irrigation systems can record pump runtime, valve state or applied water volume. Those are inputs. EDNA OS is designed to connect those inputs with measured field response in the root zone.",
+        "Conventional irrigation systems can record pump runtime, valve state or applied water volume. Those are inputs. EDNA OS connects those inputs with measured field response so irrigation and fertigation decisions are based on evidence rather than assumption.",
     },
     {
       id: "operational-evidence",
       title: "Operational Evidence",
       summary:
-        "Operational evidence is created when inline flow meters, pressure sensors, EC sensors and telemetry records are evaluated against what happened in orchard soil after an irrigation or fertigation event.",
+        "Operational evidence is created when inline flow meters, pressure sensors, EC sensors and telemetry records are evaluated against what happened in orchard soil after an irrigation or fertigation event. This is how information quality becomes part of orchard operation.",
     },
     {
       id: "lysimeter-system",
@@ -48,12 +48,12 @@ export const measuringOutcomesPage = {
       id: "why-this-matters",
       title: "Why This Matters",
       summary:
-        "Measurement changes the engineering problem. Instead of assuming that applied irrigation reached the tree, EDNA OS records evidence from the field and uses that evidence to improve future decision logic.",
+        "Measurement changes the engineering problem. Instead of assuming that applied irrigation reached the tree, EDNA OS records evidence from the field and uses that evidence to improve future water and nutrient decisions.",
     },
   ],
   relatedPages: relatedPages.measuringOutcomes,
   primaryCTA: {
     label: "Explore Lysimeter System",
-    href: "/measuring-outcomes/lysimeter-system",
+    href: "/measuring-outcomes#lysimeter-system",
   },
 } satisfies ContentPage;
